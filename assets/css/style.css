@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Roboto Slab Regular";
+    src: url(../font/RobotoSlab-Regular.ttf);
+    font-family: "Lato Regular";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    font-family: "Lato Regular", sans-serif;
+    margin: 0;
+}
+
+/* Logo + Menu nav */
+
+header {
+    background-color: #112E3E;
+}
+
+header #logo_header {
+    margin: 1rem 0rem;
+    text-align: left;
+}
+
+.liste a {
+    text-decoration: none;
+    color: white;
+}
+
+.liste ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.liste li a {
+    padding: 0rem 1rem;
+    font-size: 20px;
+}
+
+.liste li:not(:last-child) a {
+    border-right: 2px solid white;
+}
+
+/* Carousel */
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    padding-top: 25vh;
+    padding-left: 25vh;
+}
+
+.or {
+    color: rgb(183, 148, 50);
+}
+
+.white {
+    color: white;
+}
+
+#banner1 {
+    background-image: url(../img/PHOTO-BUEAU.jpg);
+}
+
+#banner2 {
+    background-image: url(../img/PHOTO-MAISON.jpg);
+}
+
+#banner3 {
+    background-image: url(../img/PHOTO-APPARTEMENT.jpg);
+}
+
+/* text central */
+
+body {
+    color: #112E3E;
+}
+
+#text_Roboto {
+    font-family: "Roboto Slab Regular", sans-serif;
+    margin: 2rem 3rem;
+}
+
+.text_margin {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.sous-titre {
+    margin: 0rem 15rem;
+}
+
+/* button */
+
+.btn1 {
+    height: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    background-color: #112E3E;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    transition: 0.25s ease;
+    text-decoration: none;
+}
+
+/* footer Logo + contact */
+
+footer {
+    background: #112E3E;
+    color: white;
+    padding-top: 3rem;
+    font-size: 1.1rem;
+}
+
+#logo {
+    text-align: right;
+}
+
+.footer_central {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+#footer_right {
+    text-align: left;
+    border-left: 2px solid white;
+    padding-left: 1rem;
+}
+
+/* Icones reseau social */
+
+footer a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    header #logo_header {
+        margin: 1rem 0rem;
+        text-align: center;
+    }
+
+    .liste ul {
+        margin-left: -2rem;
+    }
+
+    .sous-titre {
+        margin: 0rem 9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sous-titre {
+        margin: 0rem 6rem;
+    }
+
+    #logo {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .footer_central {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #footer_right {
+        text-align: center;
+        border-left: none;
+        padding-left: 0rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 546px) {
+
+     .liste ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+.liste li:not(:last-child) a {
+    border-right: none;
+}
+
+    .banner {
+        padding-left: 15vh;
+    }
+}
